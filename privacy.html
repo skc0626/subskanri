@@ -10,39 +10,89 @@
   h1 { font-size: 1.6em; } h2 { font-size: 1.15em; margin-top: 1.8em; }
   a { color: #5b4be6; }
   .date { color: #8a8a8e; font-size: .9em; }
+  ul { padding-left: 1.2em; }
+  li { margin: .3em 0; }
 </style>
 </head>
 <body>
 <h1>Privacy Policy</h1>
 <p class="date">Last updated: July 1, 2026</p>
 
-<p>“Subscriptions” (the “App”) is built to respect your privacy. This policy explains how the App handles your information.</p>
+<p>“Subscriptions” (bundle identifier <code>com.kwarb.subskanri</code>, the “App”) is a privacy-first iOS app that helps you keep track of your recurring subscriptions and their costs. Privacy is not an afterthought here — it is the way the App is built. This policy explains, in plain English, exactly what happens to your information. The short version: everything you enter stays on your device, the developer never sees it, and there is no account, no tracking, no advertising, and no third-party analytics.</p>
 
-<h2>1. Information we handle</h2>
-<p>The App stores the subscription details you enter (such as service name, price, and billing date). This information is kept <strong>on your device</strong>. No personal data is ever sent to the developer or to any third party.</p>
+<h2>1. Who is responsible</h2>
+<p>The App is provided by the developer operating under the name Veltra Foundry (the “developer,” “we,” or “us”), based in the Republic of Türkiye. You can reach us at any time at <a href="mailto:veltrafoundry@gmail.com">veltrafoundry@gmail.com</a>. Because the App is designed so that your data never leaves your own devices and services, we act as a data controller only in a very limited sense — in practice, you are the one in control of your data.</p>
 
-<h2>2. iCloud sync</h2>
-<p>If you enable iCloud Sync, your data is synced to other devices signed in to your own Apple ID through Apple’s iCloud. This data is stored in your private iCloud; the developer cannot access it. You can turn sync off at any time in Settings.</p>
+<h2>2. What information the App handles</h2>
+<p>The only information the App works with is the subscription information you choose to enter yourself, such as:</p>
+<ul>
+  <li>the name of a service (for example “Netflix” or “Spotify”);</li>
+  <li>the price and currency;</li>
+  <li>the billing cycle and billing dates;</li>
+  <li>free-trial end dates, categories, and reminder preferences you set.</li>
+</ul>
+<p>This is <strong>data you type in manually</strong>. The App does not import this information from anywhere. It does not read your emails, messages, receipts, photos, contacts, or any other content on your device.</p>
 
-<h2>3. No personal data, no tracking</h2>
-<p>The App does not collect your name, email, or location. It does not use advertising identifiers, does not track you, and includes no third-party analytics.</p>
+<h2>3. Where your data is stored (on your device)</h2>
+<p>The subscription details you enter are saved <strong>on your device</strong>, inside the App’s own private storage area (an App Group container shared between the App and its home-screen widget). Nothing about this storage requires an internet connection, and none of it is transmitted to the developer or to any third-party server. If you delete the App, this local data is removed with it.</p>
 
-<h2>4. Exchange rates</h2>
-<p>To show totals in your chosen currency, the App downloads public currency-exchange rates from a third-party provider (open.er-api.com). These requests contain <strong>no personal information</strong> — only a request for the latest rates. Rates are cached on your device.</p>
+<h2>4. Optional iCloud sync (to your own iCloud only)</h2>
+<p>If — and only if — you turn on iCloud Sync in Settings, your subscription data is synced across the other devices signed in to <strong>your own Apple ID</strong>, using Apple’s iCloud key-value storage. Please note the following:</p>
+<ul>
+  <li>The data is stored in <strong>your own private iCloud</strong>, which is governed by Apple’s iCloud terms and Apple’s privacy policy.</li>
+  <li>The developer <strong>has no access</strong> to your iCloud and never receives a copy of your data. We cannot see, read, retrieve, or restore it.</li>
+  <li>iCloud Sync is <strong>off unless you enable it</strong>, and you can turn it off again at any time in the App’s Settings.</li>
+</ul>
+<p>In other words, enabling sync moves your data between your own devices through your own Apple account; it does not send anything to us.</p>
 
-<h2>5. Your rights (GDPR / CCPA)</h2>
-<p>Because your data is stored only on your device (and, if you enable it, in your own iCloud), you remain in full control: you can view, edit, export, or delete it at any time within the App. The developer holds no copy of your data and therefore has nothing to access, port, or erase on your behalf.</p>
+<h2>5. Exchange rates (anonymous, no personal data)</h2>
+<p>So the App can display combined totals in a single currency of your choice, it downloads public currency-exchange rates from a third-party provider, <strong>open.er-api.com</strong>. What you should know:</p>
+<ul>
+  <li>These requests ask only for the latest public USD-based exchange-rate table. They contain <strong>no personal information</strong> and none of your subscription data — not the services you track, not their prices, nothing.</li>
+  <li>The request is anonymous. The App does not send any identifier, account, or profile with it.</li>
+  <li>The retrieved rates are <strong>cached on your device</strong> and refreshed roughly once a day. If the App cannot reach the internet, it falls back to a built-in approximate rate table, so the feature works offline.</li>
+  <li>As with any internet request, the provider may automatically log basic technical connection metadata (such as your IP address) as part of operating its service; this is handled by that provider, not by us, and we neither receive nor store it. You may review the provider’s practices at <a href="https://www.exchangerate-api.com/">exchangerate-api.com</a>.</li>
+</ul>
 
-<h2>6. Notifications</h2>
-<p>Reminders for billing dates and free-trial endings are scheduled entirely on your device as local notifications. No data is sent externally to deliver them.</p>
+<h2>6. Notifications (scheduled locally)</h2>
+<p>The App can remind you before a subscription is billed and before a free trial ends, so you are not caught out by an automatic renewal. These reminders are scheduled <strong>entirely on your device</strong> as local notifications. No data is sent to any server to deliver them, and no push-notification service is used. Notifications only appear if you grant notification permission and keep reminders enabled; you can disable them at any time in the App’s Settings or in your device’s system settings.</p>
 
-<h2>7. In-app purchase</h2>
-<p>Purchases are processed by Apple through the App Store. Payment information is handled by Apple; the developer never receives your card or payment details.</p>
+<h2>7. No account, no bank linking, no tracking</h2>
+<ul>
+  <li><strong>No account.</strong> You do not create an account, sign up, or log in. The App asks for no name, email, phone number, or password.</li>
+  <li><strong>No bank or financial linking.</strong> The App never connects to your bank, card, or any financial institution. It cannot see your real transactions; it only works with figures you type in.</li>
+  <li><strong>No tracking.</strong> The App does not use advertising identifiers, does not build a profile of you, and does not track you across apps or websites.</li>
+  <li><strong>No third-party analytics, no ads.</strong> There are no advertising networks and no third-party analytics or telemetry SDKs in the App.</li>
+  <li><strong>No location.</strong> The App does not request or collect your location.</li>
+</ul>
 
-<h2>8. Contact</h2>
+<h2>8. In-app purchase</h2>
+<p>The App offers a single one-time, non-consumable in-app purchase (“Premium”) that unlocks premium features. This purchase is processed entirely by <strong>Apple</strong> through the App Store using StoreKit. Payment and billing information is handled by Apple under Apple’s terms and privacy policy; the developer <strong>never receives your card number or payment details</strong>. To confirm your purchase and restore it on your other devices, the App checks your purchase entitlement with Apple — this exchange takes place between your device and Apple, and contains no data beyond what Apple needs to verify the purchase.</p>
+
+<h2>9. Children’s privacy</h2>
+<p>The App is a general-audience utility and is <strong>not directed to children under 13</strong> (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from children. In any case, the App collects no personal information from anyone and stores everything locally.</p>
+
+<h2>10. Your rights under GDPR, CCPA, and similar laws</h2>
+<p>Data-protection laws such as the EU/UK General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA) give you rights over your personal data — including the right to access, correct, export (port), delete, and object to the processing of it, and the right not to be discriminated against for exercising those rights.</p>
+<p>The App is designed so that <strong>you exercise these rights directly, on your own device</strong>:</p>
+<ul>
+  <li><strong>Access & portability:</strong> all of your data is visible in the App, and you can export it (for example to CSV) at any time.</li>
+  <li><strong>Rectification:</strong> you can edit any entry at any time.</li>
+  <li><strong>Erasure:</strong> you can delete individual entries, or delete the App entirely to remove all local data. If you used iCloud Sync, you can also remove the data from your iCloud through your Apple account.</li>
+  <li><strong>Objection / opt-out of “sale” or “sharing”:</strong> there is nothing to object to or opt out of — we do not sell, share, or disclose personal information, and there is no personal data collection to begin with.</li>
+</ul>
+<p>Because the developer <strong>holds no copy of your data</strong>, we have nothing to access, port, correct, or erase on your behalf. If you nonetheless have a privacy request or question, contact us at <a href="mailto:veltrafoundry@gmail.com">veltrafoundry@gmail.com</a> and we will respond as required by applicable law.</p>
+
+<h2>11. Data retention</h2>
+<p>Your data is retained on your device for as long as you keep it there. You control retention entirely: delete an entry, or delete the App, and the corresponding local data is gone. The developer retains no personal data because it never receives any.</p>
+
+<h2>12. International users</h2>
+<p>The App is available in English and is fully localized into Japanese, Korean, Traditional Chinese, Spanish, Indonesian, Malay, Brazilian Portuguese, Thai, and Vietnamese. Regardless of where you use it, the same principle applies everywhere: your data stays on your own device and, if you choose, in your own iCloud.</p>
+
+<h2>13. Contact</h2>
 <p>Questions about this policy? Email <a href="mailto:veltrafoundry@gmail.com">veltrafoundry@gmail.com</a>.</p>
 
-<h2>9. Changes</h2>
-<p>This policy may be updated from time to time. Significant changes will be noted in the App or on the App Store.</p>
+<h2>14. Changes to this policy</h2>
+<p>This policy may be updated from time to time. Significant changes will be noted in the App or on the App Store, and the “Last updated” date above will be revised. Your continued use of the App after an update means you accept the revised policy.</p>
 </body>
 </html>
